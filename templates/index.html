@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <form method="post" action="{{ url_for('index') }}">
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="text" name="weight" id="weight" required>
+        </div>
+        <div class="input-group">
+            <label for="height">Height (m):</label>
+            <input type="text" name="height" id="height" required>
+        </div>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
